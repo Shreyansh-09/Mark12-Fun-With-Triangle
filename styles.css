@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+:root{
+    --primary-color: #1e3a8a;
+}
+
+body {
+    margin: -24px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+}
+
+header {
+    padding: 0rem 2rem;
+    background-color: var(--primary-color);
+    color: aliceblue;
+    height: 12vh;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 0rem 0.5rem;
+}
+
+.nav-bar {
+    position: relative;
+    width: 100%;
+    text-align: right;
+}
+
+header h1{
+    font-family: "Megrim", cursive;
+    text-align: initial;
+}
+
+.page-heading, h2, p{
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 600px;
+    padding: 1rem;
+    
+}
+
+p{
+    font-size: larger;
+}
+
+.container{
+    display: block;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+}
+
+.angle-input, .value-input, .side-input, label{
+    font-style: inherit;
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 70%;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    font-size: large;
+
+}
+
+#triangle-btn-check, #hypotenuse-btn, #area-calculate-btn{
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    color: aliceblue;
+    font-size: large;
+}
+
+
+.btn-div{
+    display: block;
+    width: 200px;
+    margin: auto;
+    padding: 0.5rem 1rem;
+}
+
+#submit-btn{
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    color: aliceblue;
+    font-size: large;
+}
+
+ol {
+    text-align: center;
+    list-style-position: inside;
+}
+
+li{
+    margin: 0.5rem 1rem;
+    padding: 1rem;
+}
+
+.list-item{
+    display: inline;
+}
+
+#output{
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 1rem;
+    width: 400px;
+    margin: 0.5rem auto;
+    padding: 1rem;
+    height: 14vh;
+}
