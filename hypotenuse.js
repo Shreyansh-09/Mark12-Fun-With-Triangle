@@ -3,8 +3,13 @@ var btnHypotenuse = document.querySelector("#hypotenuse-btn")
 var outputDiv = document.querySelector("#output")
 
 function sumOfSqure(a,b){
-    var sumofSquare = a*a + b*b;
-    return(sumofSquare);
+    if(a <=0 && b<= 0){
+        outputDiv.innerText = "Side value(s) can not be zero or negative."
+    }
+    else{
+        var sumofSquare = a*a + b*b;
+        return(sumofSquare);
+    }
 }
 
 function calculateHypotenuse(){
