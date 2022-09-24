@@ -17,6 +17,9 @@ function clickeventHandler(){
     if(firstSide.value == "" || secondSide == "" || thirdSide == ""){
         outputDiv.innerText = "please Enter the data."
     }
+    else if(Number(firstSide.value) <= 0 || Number(secondSide.value) <= 0 || Number(thirdSide.value) <= 0){
+        outputDiv.innerText = "Side value must be greater than zero."
+    }
     else{
         var a = Number(firstSide.value)
         var b = Number(secondSide.value)
