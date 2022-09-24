@@ -14,19 +14,23 @@ function triangleValidation(side1,side2,side3){
 }
 
 function clickeventHandler(){
-    var a = Number(firstSide.value)
-    var b = Number(secondSide.value)
-    var c = Number(thirdSide.value)
-    var validateTriangle = triangleValidation(a,b,c);
-    if(validateTriangle){
-        var s = (a + b + c)/2;
-        var area = Math.sqrt((s*(s-a)*(s-b)*(s-c)));
-        outputDiv.innerText = "Area of a triangle using heron's formula is " + area.toFixed(4) + " units.";
+    if(firstSide.value == "" || secondSide == "" || thirdSide == ""){
+        outputDiv.innerText = "please Enter the data."
     }
     else{
-        outputDiv.innerText = "Enter valid side lengths such that each side lengths.";
+        var a = Number(firstSide.value)
+        var b = Number(secondSide.value)
+        var c = Number(thirdSide.value)
+        var validateTriangle = triangleValidation(a,b,c);
+        if(validateTriangle){
+            var s = (a + b + c)/2;
+            var area = Math.sqrt((s*(s-a)*(s-b)*(s-c)));
+            outputDiv.innerText = "Area of a triangle using heron's formula is " + area.toFixed(4) + " units.";
+        }
+        else{
+            outputDiv.innerText = "Enter valid side length(s).";
+        }
     }
-
 }
 
 
