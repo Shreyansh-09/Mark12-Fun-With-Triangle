@@ -8,6 +8,7 @@ function clickEventHandler(){
     var score = 0;
     var index = 0;
     var results = new FormData(quizForm);
+    console.log(results);
     for(var value of results.values()){
         if(value === rightAns[index]){
             score = score + 1;
